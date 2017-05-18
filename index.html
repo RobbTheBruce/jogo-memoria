@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="memoria.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript">
+            var gamememoria = new GameMemoria();
+        </script>
+    </head>
+    <body>
+        <div style="width: 300px; text-align: center; display: flex; margin: auto;">
+            <div id="button" style="width: 50%;">
+                <button id="btn-inicio" onclick="gamememoria.iniciar()">Iniciar</button>
+            </div>
+            <div id="score" style="width: 50%;">
+                <span id="display_tempo"></span>
+            </div>
+        </div>
+
+        <section id="main" style="display: flex;">
+            <span id="loading" style="display: none;">Aguarde carregando...</span>
+            <div id="game" style="margin: auto;">
+
+            </div>
+        </section>
+
+
+    </body>
+</html>
